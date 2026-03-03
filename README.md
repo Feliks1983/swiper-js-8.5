@@ -1,2 +1,2 @@
 # swiper-js-8.5
-https://github.com/Feliks1983/swiper-js-8.5.git
+https://feliks1983.github.io/swiper-js-8.5/
