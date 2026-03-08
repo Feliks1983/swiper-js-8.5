@@ -262,7 +262,7 @@ body {
 
 .cards{
   width: 1120px;
-  height: 288px;
+  height: 322px;
   margin-left: 0px;
   margin-top: 0px;
   opacity: 1;
@@ -295,7 +295,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 744px;
-  height: auto;
+  height: 288px;
   margin-left: 0px;
   margin-top: 0px;
 }
