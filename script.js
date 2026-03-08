@@ -1,35 +1,27 @@
-const swiperGroupReadmore = document.querySelector('.swiper__readmore');
-const swiperGroupReadmoreText = document.querySelector('.swiper__readmore__text');
+const readmore = document.querySelector('.readmore');
+const cardsNone = document.querySelector(".card-none");
+const readmoreText = document.querySelector('.readmore__text');
 
-const swiperCopy = document.querySelectorAll('.swiper-wrapper');
-const swiperGroups = document.querySelector('.swiper-groups');
-const swiperGroupCardGo = document.querySelectorAll(".swiper-slide__img");
-
-swiperGroupReadmore.addEventListener('click', function () {
-  if (swiperGroups.style.display === 'block') {
-    swiperGroups.style.display = 'none';
-    swiperGroupReadmoreText.innerHTML = 'Показать';
-  } else {
-    swiperGroups.style.display = 'block';
-    swiperGroupReadmoreText.innerHTML = 'Скрыть';
-  }
+readmore.addEventListener('click', function () {
+  if (cardsNone.style.display === "block") {
+		cardsNone.style.display = "none";
+		readmoreText.innerHTML = "Показать";
+	} else {
+		cardsNone.style.display = "block";
+		readmoreText.innerHTML = "Скрыть";
+	}
 });
 
-const swiper = new Swiper(".swiper-groups", {
+const swiper = new Swiper(".swiper", {
+
 	slidesPerView: "auto",
 	spaceBetween: 1,
-	freeMode: true,
-  simulateTouch: false,
 
 	pagination: {
-		el: ".swiper__paginators",
+		el: ".swiper-pagination",
 		clickable: true,
 		type: "bullets",
 	},
 });
-
-let mySwiper = null;
-
-
 
 
