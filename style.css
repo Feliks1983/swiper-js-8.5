@@ -25,6 +25,7 @@ body {
   margin-left: 0px;
   margin-top: 0px;
   opacity: 1;
+  background: #F8F8F8;
 }
 
 .cards__text {
@@ -58,6 +59,8 @@ body {
   height: 72px;
   margin-top: 0px;
   margin-left: 0px;
+  gap: 16px;
+  background: #F8F8F8;
 }
 
 .swiper-slide {
@@ -69,6 +72,7 @@ body {
   margin-left: 0px;
   padding: 16px 20px;
   gap: 60px;
+  background: #FFFFFF;
 }
 
 .swiper-slide__lenovo {
@@ -122,8 +126,9 @@ body {
   margin-left: 0px;
   margin-top: 0px;
   opacity: 1;
-  padding: 24px 16px 34px 24px;
+  padding: 24px 16px 34px 0px;
   border-top: 1px solid #D9FFF5;
+  background: #F8F8F8
 ;
 }
 
@@ -132,7 +137,7 @@ body {
   width: 768px;
   height: 24px;
   opacity: 1;
-  margin-left: 0px;
+  margin-left: 8px;
   margin-top: 0px;
 }
 
@@ -146,27 +151,6 @@ body {
   text-transform: uppercase;
 }
 
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 500px;
-  height: 72px;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
-.swiper-slide {
-  display: flex;
-  width: 240px;
-  height: 40px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding: 16px 20px;
-  gap: 60px;
-}
-
 .cards-group {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -174,6 +158,9 @@ body {
   height: auto;
   margin-left: 0px;
   margin-top: 0px;
+  background: #F8F8F8;
+  gap: 24px;
+  padding: 24px;
 }
 
 .cards__a-fo {
@@ -183,7 +170,7 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
-
+  background: #FFFFFF;
 }
 
 .cards__img {
@@ -194,12 +181,47 @@ body {
   margin-left: 16px;
 }
 
-.go {
+.cards--aple {
+  width: 44px;
+  height: 44px;
+}
+
+.cards--samsung {
+  width: 116px;
+  height: 38.52px;
+}
+
+.cards--hp {
+  width: 52px;
+  height: 52px;
+}
+
+.cards--acer {
+  width: 94px;
+  height: 24px;
+}
+
+.cards--aple-go {
+  margin-left: 108px;
+}
+
+.cards--hp-go {
+  margin-left: 106px;
+}
+
+.cards--acer-go {
+  margin-left: 58px;
+}
+
+.cards__go {
   width: 40px;
   height: 40px;
   opacity: 1;
   margin-top: 16px;
-  margin-left: 44px;
+}
+
+.cards-group__left {
+  margin-left: 40px;
 }
 
 .cards__a-two {
@@ -220,13 +242,18 @@ body {
   gap: 4px;
 }
 
-.readmore {
+.readmore-remove {
   display: block;
+  background: #F8F8F8;
+}
+
+.readmore {
+  display: flex;
   width: 134px;
   height: 24px;
   opacity: 1;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: 24px;
 }
 
 .readmore__img {
@@ -258,17 +285,17 @@ body {
 
 .card-none {
   display: block;
+  padding-bottom: 14px;
 }
 
 .cards{
-  width: 1120px;
+  width: 1220px;
   height: 322px;
   margin-left: 0px;
   margin-top: 0px;
   opacity: 1;
-  padding: 24px 16px 34px 24px;
   border-top: 1px solid #D9FFF5;
-;
+  background: #F8F8F8;
 }
 
 .cards__text {
@@ -278,7 +305,7 @@ body {
   opacity: 1;
   margin-left: 0px;
   margin-top: 0px;
-  padding: 32px 15px;
+  padding: 16px 32px;
 }
 
 .cards__text p {
@@ -294,10 +321,16 @@ body {
 .cards-group {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 744px;
-  height: 288px;
+  width: 240px;
+  height: 200px;
   margin-left: 0px;
   margin-top: 0px;
+  row-gap: 16px;
+  column-gap: 32px;
+  background: #F8F8F8;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-right: 33px;
 }
 
 .cards__a-fo {
@@ -307,6 +340,7 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #FFFFFF;
 }
 
 .cards__img {
@@ -317,12 +351,51 @@ body {
   margin-left: 16px;
 }
 
-.go {
+.cards--aple {
+  width: 44px;
+  height: 44px;
+}
+
+.cards--samsung {
+  width: 116px;
+  height: 38.52px;
+}
+
+.cards--hp {
+  width: 52px;
+  height: 52px;
+}
+
+.cards--acer {
+  width: 94px;
+  height: 24px;
+}
+
+.cards--aple-go {
+  margin-left: 124px;
+}
+
+.cards--hp-go {
+  margin-left: 106px;
+}
+
+.cards--acer-go {
+  margin-left: 58px;
+}
+
+.cards-group__left {
+  margin-left: 40px;
+}
+
+.card-sony__go {
+  margin-left: 42px;
+}
+
+.cards__go {
   width: 40px;
   height: 40px;
   opacity: 1;
   margin-top: 16px;
-  margin-left: 44px;
 }
 
 .cards__a-two {
@@ -332,6 +405,7 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #FFFFFF;
 }
 
 .cards__a-free {
@@ -348,13 +422,18 @@ body {
   gap: 4px;
 }
 
-.readmore {
+.readmore-remove {
   display: block;
-  width: 134px;
+  background: #F8F8F8;
+}
+
+.readmore {
+  display: flex;
+  width: auto;
   height: 24px;
   opacity: 1;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: 32px; 
 }
 
 .readmore__img {
@@ -364,6 +443,7 @@ body {
   margin-top: 0px;
   margin-left: 0px;
 }
+
 .readmore__text {
   width: 101px;
   height: 24px;
@@ -389,24 +469,25 @@ body {
 }
 
 .cards{
-  width: 1121px;
-  height: 288px;
+  width: 1221px;
+  height: 398px;
   margin-left: 0px;
   margin-top: 0px;
   opacity: 1;
-  padding: 24px 16px 34px 24px;
   border-top: 1px solid #D9FFF5;
+  background: #F8F8F8
 ;
 }
 
 .cards__text {
   display: block;
-  width: 1120px;
+  width: auto;
   height: 56px;
   opacity: 1;
   margin-left: 0px;
   margin-top: 0px;
-  padding: 32px 15px;
+  padding: 15px 32px;
+
 }
 
 .cards__text p {
@@ -422,10 +503,15 @@ body {
 .cards-group {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 744px;
+  width: 1080px;
   height: auto;
   margin-left: 0px;
   margin-top: 0px;
+  background: #F8F8F8;
+  gap: 16px;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-right: 33px;
 }
 
 .cards__a-fo {
@@ -435,22 +521,75 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #FFFFFF;
 }
 
 .cards__img {
-  width: 108px;
-  height: 44px;
+  width: 128px;
+  height: 32px;
   opacity: 1;
   margin-top: 20px;
   margin-left: 16px;
 }
 
-.go {
+.cards--aple {
+  width: 44px;
+  height: 44px;
+}
+
+.cards--samsung {
+  width: 116px;
+  height: 38.52px;
+}
+
+.cards--hp {
+  width: 52px;
+  height: 52px;
+}
+
+.cards--acer {
+  width: 94px;
+  height: 24px;
+}
+
+.cards--aple-go {
+  margin-left: 124px;
+}
+
+.cards--hp-go {
+  margin-left: 100px;
+}
+
+.cards--acer-go {
+  margin-left: 58px;
+}
+
+.cards-group__left {
+  margin-left: 60px;
+}
+
+.card-sony__go {
+  margin-left: 42px;
+}
+
+.cards__go {
   width: 40px;
   height: 40px;
   opacity: 1;
   margin-top: 16px;
   margin-left: 44px;
+}
+
+.cards--aple-go {
+  margin-left: 128px;
+}
+
+.cards--hp-go {
+  margin-left: 118px;
+}
+
+.cards--acer-go {
+  margin-left: 66px;
 }
 
 .cards__a-two {
@@ -460,6 +599,7 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #FFFFFF;
 }
 
 .cards__a-free {
@@ -469,6 +609,7 @@ body {
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #FFFFFF;
 }
 
 .swiper-pagination {
@@ -483,11 +624,14 @@ body {
 
 .readmore {
   display: block;
-  width: 134px;
-  height: 24px;
+  width: auto;
+  height: 60px;
   opacity: 1;
   margin-top: 0px;
   margin-left: 0px;
+  background: #F8F8F8;
+  padding-top: 46px;
+  padding-left: 32px;
 }
 
 .readmore__img {
