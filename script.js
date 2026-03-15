@@ -1,27 +1,25 @@
-const readmore = document.querySelector('.readmore');
-const cardsNone = document.querySelector(".card-none");
-const readmoreText = document.querySelector('.readmore__text');
+const readmore = document.querySelector(".readmore-remove");
+const cardsGroup = document.querySelector(".cards-none__block");
+const readmoreText = document.querySelector(".readmore__text");
 
-readmore.addEventListener('click', function () {
-  if (cardsNone.style.display === "block") {
-		cardsNone.style.display = "none";
+readmore.addEventListener("click", function () {
+	if (cardsGroup.style.display === "block") {
+		cardsGroup.style.display = "none";
 		readmoreText.innerHTML = "Показать";
 	} else {
-		cardsNone.style.display = "block";
+		cardsGroup.style.display = "block";
 		readmoreText.innerHTML = "Скрыть";
 	}
 });
 
 const swiper = new Swiper(".swiper", {
-
-	slidesPerView: "auto",
+	slidesPerView: 1,
 	spaceBetween: 1,
 
 	pagination: {
-		el: ".swiper-pagination",
+		el: ".swiper-pagina",
 		clickable: true,
 		type: "bullets",
 	},
 });
-
 

@@ -1,658 +1,962 @@
 body {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: 'TT Lakes Compressed';
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: "TT Lakes Compressed";
 }
 
 @font-face {
-  font-family: 'TT Lakes Compressed';
-  src: url(font/TTLakesCompressed-Regular.ttf);
+	font-family: "TT Lakes Compressed";
+	src: url(font/TTLakesCompressed-Regular.ttf);
+	font-weight: normal;
+}
+
+@media screen and (min-width: 320px) {
+	.readmore {
+		display: none;
+	}
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+		height: 234px;
+		background: #f8f8f8;
+		padding-left: 16px;
+	}
+
+	.cards__text {
+		display: block;
+		width: 320px;
+		height: 80px;
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.cards__text p {
+		display: flex;
+		align-items: center;
+		width: 288px;
+		height: 48px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		color: #7e7e82;
+	}
+
+	.swiper {
+		width: 240px;
+		height: 100px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	.swiper-wrapper {
+		width: auto;
+		height: 72px;
+		gap: 16px;
+	}
+
+	.cards-group {
+		display: none;
+	}
+
+	.cards__a-fo {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-lenovo {
+		width: 108px;
+		height: 32px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 20px;
+	}
+
+	.cards-lenovo__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 60px;
+		margin-top: 16px;
+	}
+
+	.cards-samsung {
+		width: 116px;
+		height: 38.52px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 17px;
+	}
+
+	.cards-samsung__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 36px;
+		margin-top: 16px;
+	}
+
+	.cards-aple {
+		width: 44px;
+		height: 44px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 12px;
+	}
+
+	.cards-aple__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 108px;
+		margin-top: 16px;
+	}
+
+	.cards__a-two {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-viewsonic {
+		width: 128px;
+		height: 21px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 26px;
+	}
+
+	.cards-viewsonic__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards-bosh {
+		width: 128px;
+		height: 28.6px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 21.7px;
+	}
+
+	.cards-bosh__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 40px;
+		margin-top: 16px;
+	}
+
+	.cards-hp {
+		width: 52px;
+		height: 52px;
+		opacity: 1;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.cards-hp__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 122px;
+		margin-top: 16px;
+	}
+
+	.cards-acer {
+		width: 94px;
+		height: 24px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 24px;
+	}
+
+	.cards-acer__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 74px;
+		margin-top: 16px;
+	}
+
+	.cards-sony {
+		width: 128px;
+		height: 25.6px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 23px;
+	}
+
+	.cards-sony__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards__a-free {
+		display: none;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.swiper-pagina {
+		display: block;
+		width: 204px;
+		height: 12px;
+		margin-top: 0px;
+		margin-left: 0px;
+		gap: 4px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+	.swiper {
+		display: none;
+	}
+
+	.cards {
+		display: grid;
+		width: 100%;
+		height: 322px;
+		background: #f8f8f8;
+	}
+
+	.cards-line {
+		width: 768px;
+		height: 1px;
+		opacity: 1;
+		border-radius: 1px;
+		border-top: 1px solid #d9fff5;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.cards-list {
+		display: grid;
+		width: 768px;
+		height: 322px;
+		opacity: 1;
+		padding-left: 24px;
+		border-top: 1px solid #d9fff5;
+		background: #f8f8f8;
+	}
+
+	.cards__text {
+		display: block;
+		width: 768px;
+		height: 24px;
+		opacity: 1;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
+	.cards__text p {
+		width: 338px;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		background: #f8f8f8;
+		color: #7e7e82;
+	}
+
+	.cards-none__block {
+		display: block;
+	}
+
+	.cards-group {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		width: auto;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 24px;
+		background: #f8f8f8;
+		column-gap: 32px;
+		row-gap: 16px;
+	}
+
+	.cards__a-fo {
+		display: block;
+		width: 224px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-lenovo {
+		width: 108px;
+		height: 32px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 20px;
+	}
+
+	.cards-lenovo__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 44px;
+		margin-top: 16px;
+	}
+
+	.cards-samsung {
+		width: 116px;
+		height: 38.52px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 17px;
+	}
+
+	.cards-samsung__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 36px;
+		margin-top: 16px;
+	}
+
+	.cards-aple {
+		width: 44px;
+		height: 44px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 12px;
+	}
+
+	.cards-aple__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 108px;
+		margin-top: 16px;
+	}
+
+	.cards__a-two {
+		display: none;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-bosh {
+		width: 128px;
+		height: 28.6px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 21.7px;
+	}
+
+	.cards-bosh__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 24px;
+		margin-top: 16px;
+	}
+
+	.cards-hp {
+		width: 52px;
+		height: 52px;
+		opacity: 1;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.cards-hp__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 106px;
+		margin-top: 16px;
+	}
+
+	.cards-acer {
+		width: 94px;
+		height: 24px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 24px;
+	}
+
+	.cards-acer__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 58px;
+		margin-top: 16px;
+	}
+
+	.cards__a-free {
+		display: none;
+	}
+
+	.readmore-remove {
+		display: block;
+		background: #f8f8f8;
+	}
+
+	.readmore {
+		display: flex;
+		width: 134px;
+		height: 24px;
+		opacity: 1;
+		margin-top: 24px;
+		margin-left: 0px;
+	}
+
+	.readmore__img {
+		width: 24px;
+		height: 24px;
+		opacity: 1;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.readmore__text {
+		width: 101px;
+		height: 24px;
+		opacity: 1;
+		margin-top: 0px;
+		margin-left: 0px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		color: #1b1c21;
+	}
+}
+
+@media screen and (min-width: 951px) and (max-width: 1120px) {
+	.swiper {
+		display: none;
+	}
+
+	.card-none__block {
+		display: block;
+	}
+
+	.cards {
+		display: grid;
+		height: 322px;
+		background: #f8f8f8;
+	}
+
+	.cards-list {
+		display: grid;
+		width: auto;
+		height: 288px;
+		opacity: 1;
+		border-top: 1px solid #d9fff5;
+		background: #f8f8f8;
+	}
+
+	.cards__text {
+		display: block;
+		width: auto;
+		height: 56px;
+		opacity: 1;
+		padding: 16px 32px;
+	}
+
+	.cards__text p {
+		width: 338px;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		background: #f8f8f8;
+		color: #7e7e82;
+	}
+
+	.cards-group {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		width: auto;
+		height: auto;
+		column-gap: 32px;
+		row-gap: 16px;
+		background: #f8f8f8;
+		padding-left: 32px;
+		padding-top: 0px;
+		padding-right: 33px;
+	}
+
+	.cards__a-fo {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-lenovo {
+		width: 108px;
+		height: 32px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 20px;
+	}
+
+	.cards-lenovo__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 60px;
+		margin-top: 16px;
+	}
+
+	.cards-samsung {
+		width: 116px;
+		height: 38.52px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 17px;
+	}
+
+	.cards-samsung__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 52px;
+		margin-top: 16px;
+	}
+
+	.cards-aple {
+		width: 44px;
+		height: 44px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 12px;
+	}
+
+	.cards-aple__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 124px;
+		margin-top: 16px;
+	}
+
+	.cards__a-two {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-viewsonic {
+		width: 128px;
+		height: 21px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 26px;
+	}
+
+	.cards-viewsonic__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards-bosh {
+		width: 128px;
+		height: 28.6px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 21.7px;
+	}
+
+	.cards-bosh__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 40px;
+		margin-top: 16px;
+	}
+
+	.cards-hp {
+		width: 52px;
+		height: 52px;
+		opacity: 1;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.cards-hp__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 122px;
+		margin-top: 16px;
+	}
+
+	.cards-acer {
+		width: 94px;
+		height: 24px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 24px;
+	}
+
+	.cards-acer__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 74px;
+		margin-top: 16px;
+	}
+
+	.cards-sony {
+		width: 128px;
+		height: 25.6px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 23px;
+	}
+
+	.cards-sony__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards__a-free {
+		display: none;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.readmore-remove {
+		display: block;
+		background: #f8f8f8;
+		height: 24px;
+	}
+
+	.readmore {
+		display: flex;
+		width: auto;
+		height: 24px;
+		opacity: 1;
+		margin-left: 31px;
+		margin-top: 24px;
+	}
+
+	.readmore__img {
+		width: 24px;
+		height: 24px;
+		opacity: 1;
+	}
+
+	.readmore__text {
+		width: 101px;
+		height: 24px;
+		opacity: 1;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		color: #1b1c21;
+	}
+}
+
+@media screen and (min-width: 1121px) {
+	.swiper {
+		display: none;
+	}
+
+	.card-none__block {
+		display: block;
+	}
+
+	.cards {
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+
+	}
+
+	.cards-list {
+		display: grid;
+		width: 1120px;
+		height: 412px;
+		opacity: 1;
+		border-top: 1px solid #d9fff5;
+		background: #f8f8f8;
+	}
+
+	.cards__text {
+		display: block;
+		width: auto;
+		height: 56px;
+		opacity: 1;
+		padding: 16px 32px;
+	}
+
+	.cards__text p {
+		width: 338px;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		background: #f8f8f8;
+		color: #7e7e82;
+	}
+
+	.cards-group {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: auto auto auto auto;
+		width: auto;
+		height: 298px;
+		background: #f8f8f8;
+		padding-left: 32px;
+		padding-top: 24px;
+		padding-right: 33px;
+		column-gap: 32px;
+		row-gap: 16px;
+	}
+
+	.cards__a-fo {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-lenovo {
+		width: 108px;
+		height: 32px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 20px;
+	}
+
+	.cards-lenovo__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 60px;
+		margin-top: 16px;
+	}
+
+	.cards-samsung {
+		width: 116px;
+		height: 38.52px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 17px;
+	}
+
+	.cards-samsung__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 52px;
+		margin-top: 16px;
+	}
+
+	.cards-aple {
+		width: 44px;
+		height: 44px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 12px;
+	}
+
+	.cards-aple__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 124px;
+		margin-top: 16px;
+	}
+
+	.cards__a-two {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.cards-viewsonic {
+		width: 128px;
+		height: 21px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 26px;
+	}
+
+	.cards-viewsonic__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards-bosh {
+		width: 128px;
+		height: 28.6px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 21.7px;
+	}
+
+	.cards-bosh__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 40px;
+		margin-top: 16px;
+	}
+
+	.cards-hp {
+		width: 52px;
+		height: 52px;
+		opacity: 1;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.cards-hp__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 122px;
+		margin-top: 16px;
+	}
+
+	.cards-acer {
+		width: 94px;
+		height: 24px;
+		opacity: 1;
+		margin-left: 16px;
+		margin-top: 24px;
+	}
+
+	.cards-acer__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 74px;
+		margin-top: 16px;
+	}
+
+	.cards-sony {
+		width: 128px;
+		height: 25.6px;
+		opacity: 1;
+		margin-left: 14px;
+		margin-top: 23px;
+	}
+
+	.cards-sony__go {
+		width: 40px;
+		height: 40px;
+		opacity: 1;
+		margin-left: 42px;
+		margin-top: 16px;
+	}
+
+	.cards__a-free {
+		display: block;
+		width: 240px;
+		height: 72px;
+		opacity: 1;
+		border-radius: 6px;
+		border-width: 1px;
+		border: 1px solid #eaeaea;
+		background: #ffffff;
+	}
+
+	.readmore {
+		display: flex;
+		width: auto;
+		height: 24px;
+		opacity: 1;
+		padding-top: 0px;
+		padding-left: 32px;
+		background: #f8f8f8;
+	}
+
+	.readmore__img {
+		width: 24px;
+		height: 24px;
+		opacity: 1;
+	}
+
+	.readmore__text {
+		width: auto;
+		height: 24px;
+		opacity: 1;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		color: #1b1c21;
+	}
 }
-
-@media screen and (min-width: 320px) { 
-.readmore {
-  display: none;
-}
-
-.card-none {
-  display: none;
-}
-
-.cards{
-  width: 320px;
-  height: 234px;
-  margin-left: 0px;
-  margin-top: 0px;
-  opacity: 1;
-  background: #F8F8F8;
-}
-
-.cards__text {
-  display: block;
-  width: 320px;
-  height: 80px;
-  opacity: 1;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding: 16px 15px;
-}
-
-.cards__text p {
-  display: flex;
-  align-items: center;
-  width: 288px;
-  height: 48px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-  background: #FFFFFF;
-}
-
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 500px;
-  height: 72px;
-  margin-top: 0px;
-  margin-left: 0px;
-  gap: 16px;
-  background: #F8F8F8;
-}
-
-.swiper-slide {
-  display: flex;
-  width: 240px;
-  height: 40px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding: 16px 20px;
-  gap: 60px;
-  background: #FFFFFF;
-}
-
-.swiper-slide__lenovo {
-  width: 108px;
-  height: 32px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 1;
-}
-
-.swiper-slide__go {
-  width: 40px;
-  height: 40px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 1;
-}
-
-.swiper-slide__samsung {
-  width: 116px;
-  height: 38.52px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 1;
-}
-
-.swiper-pagination {
-  display: block;
-  width: 210px;
-  height: 20px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #DDDDDD;
-  gap: 4px;
-}
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 950px) { 
-.swiper {
-  display: none;
-}
-
-.card-none {
-  display: block;
-}
-
-.cards{
-  width: auto;
-  height: 322px;
-  margin-left: 0px;
-  margin-top: 0px;
-  opacity: 1;
-  padding: 24px 16px 34px 0px;
-  border-top: 1px solid #D9FFF5;
-  background: #F8F8F8
-;
-}
-
-.cards__text {
-  display: block;
-  width: 768px;
-  height: 24px;
-  opacity: 1;
-  margin-left: 8px;
-  margin-top: 0px;
-}
-
-.cards__text p {
-  width: 338px;
-  height: 24px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-}
-
-.cards-group {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 744px;
-  height: auto;
-  margin-left: 0px;
-  margin-top: 0px;
-  background: #F8F8F8;
-  gap: 24px;
-  padding: 24px;
-}
-
-.cards__a-fo {
-  display: block;
-  width: 224px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.cards__img {
-  width: 108px;
-  height: 44px;
-  opacity: 1;
-  margin-top: 20px;
-  margin-left: 16px;
-}
-
-.cards--aple {
-  width: 44px;
-  height: 44px;
-}
-
-.cards--samsung {
-  width: 116px;
-  height: 38.52px;
-}
-
-.cards--hp {
-  width: 52px;
-  height: 52px;
-}
-
-.cards--acer {
-  width: 94px;
-  height: 24px;
-}
-
-.cards--aple-go {
-  margin-left: 108px;
-}
-
-.cards--hp-go {
-  margin-left: 106px;
-}
-
-.cards--acer-go {
-  margin-left: 58px;
-}
-
-.cards__go {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  margin-top: 16px;
-}
-
-.cards-group__left {
-  margin-left: 40px;
-}
-
-.cards__a-two {
- display: none;
-}
-
-.cards__a-free {
-  display: none;
-}
-
-.swiper-pagination {
-  display: block;
-  width: 204px;
-  height: 12px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #DDDDDD;
-  gap: 4px;
-}
-
-.readmore-remove {
-  display: block;
-  background: #F8F8F8;
-}
-
-.readmore {
-  display: flex;
-  width: 134px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 24px;
-}
-
-.readmore__img {
-  width: 24px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-.readmore__text {
-  width: 101px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1B1C21;
-}
-
-}
-
-@media screen and (min-width: 951px) and (max-width: 1120px) { 
-.swiper {
-  display: none;
-}
-
-.card-none {
-  display: block;
-  padding-bottom: 14px;
-}
-
-.cards{
-  width: 1220px;
-  height: 322px;
-  margin-left: 0px;
-  margin-top: 0px;
-  opacity: 1;
-  border-top: 1px solid #D9FFF5;
-  background: #F8F8F8;
-}
-
-.cards__text {
-  display: block;
-  width: 1120px;
-  height: 56px;
-  opacity: 1;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding: 16px 32px;
-}
-
-.cards__text p {
-  width: 338px;
-  height: 24px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-}
-
-.cards-group {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 240px;
-  height: 200px;
-  margin-left: 0px;
-  margin-top: 0px;
-  row-gap: 16px;
-  column-gap: 32px;
-  background: #F8F8F8;
-  padding-left: 32px;
-  padding-top: 24px;
-  padding-right: 33px;
-}
-
-.cards__a-fo {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.cards__img {
-  width: 108px;
-  height: 44px;
-  opacity: 1;
-  margin-top: 20px;
-  margin-left: 16px;
-}
-
-.cards--aple {
-  width: 44px;
-  height: 44px;
-}
-
-.cards--samsung {
-  width: 116px;
-  height: 38.52px;
-}
-
-.cards--hp {
-  width: 52px;
-  height: 52px;
-}
-
-.cards--acer {
-  width: 94px;
-  height: 24px;
-}
-
-.cards--aple-go {
-  margin-left: 124px;
-}
-
-.cards--hp-go {
-  margin-left: 106px;
-}
-
-.cards--acer-go {
-  margin-left: 58px;
-}
-
-.cards-group__left {
-  margin-left: 40px;
-}
-
-.card-sony__go {
-  margin-left: 42px;
-}
-
-.cards__go {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  margin-top: 16px;
-}
-
-.cards__a-two {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.cards__a-free {
-  display: none;
-}
-
-.swiper-pagination {
-  display: block;
-  width: 204px;
-  height: 12px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #DDDDDD;
-  gap: 4px;
-}
-
-.readmore-remove {
-  display: block;
-  background: #F8F8F8;
-}
-
-.readmore {
-  display: flex;
-  width: auto;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 32px; 
-}
-
-.readmore__img {
-  width: 24px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
-.readmore__text {
-  width: 101px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1B1C21;
-}
-
-}
-
-@media screen and (min-width: 1121px) { 
-.swiper {
-  display: none;
-}
-
-.card-none {
-  display: block;
-}
-
-.cards{
-  width: 1221px;
-  height: 398px;
-  margin-left: 0px;
-  margin-top: 0px;
-  opacity: 1;
-  border-top: 1px solid #D9FFF5;
-  background: #F8F8F8
-;
-}
-
-.cards__text {
-  display: block;
-  width: auto;
-  height: 56px;
-  opacity: 1;
-  margin-left: 0px;
-  margin-top: 0px;
-  padding: 15px 32px;
-
-}
-
-.cards__text p {
-  width: 338px;
-  height: 24px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-}
-
-.cards-group {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 1080px;
-  height: auto;
-  margin-left: 0px;
-  margin-top: 0px;
-  background: #F8F8F8;
-  gap: 16px;
-  padding-left: 32px;
-  padding-top: 24px;
-  padding-right: 33px;
-}
-
-.cards__a-fo {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.cards__img {
-  width: 128px;
-  height: 32px;
-  opacity: 1;
-  margin-top: 20px;
-  margin-left: 16px;
-}
-
-.cards--aple {
-  width: 44px;
-  height: 44px;
-}
-
-.cards--samsung {
-  width: 116px;
-  height: 38.52px;
-}
-
-.cards--hp {
-  width: 52px;
-  height: 52px;
-}
-
-.cards--acer {
-  width: 94px;
-  height: 24px;
-}
-
-.cards--aple-go {
-  margin-left: 124px;
-}
-
-.cards--hp-go {
-  margin-left: 100px;
-}
-
-.cards--acer-go {
-  margin-left: 58px;
-}
-
-.cards-group__left {
-  margin-left: 60px;
-}
-
-.card-sony__go {
-  margin-left: 42px;
-}
-
-.cards__go {
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  margin-top: 16px;
-  margin-left: 44px;
-}
-
-.cards--aple-go {
-  margin-left: 128px;
-}
-
-.cards--hp-go {
-  margin-left: 118px;
-}
-
-.cards--acer-go {
-  margin-left: 66px;
-}
-
-.cards__a-two {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.cards__a-free {
-  display: block;
-  width: 240px;
-  height: 72px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #FFFFFF;
-}
-
-.swiper-pagination {
-  display: none;
-  width: 204px;
-  height: 12px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #DDDDDD;
-  gap: 4px;
-}
-
-.readmore {
-  display: block;
-  width: auto;
-  height: 60px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #F8F8F8;
-  padding-top: 46px;
-  padding-left: 32px;
-}
-
-.readmore__img {
-  width: 24px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-.readmore__text {
-  width: 101px;
-  height: 24px;
-  opacity: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1B1C21;
-}
-
-}
-
