@@ -18,8 +18,7 @@ body {
 
 	.cards {
 		display: flex;
-		justify-content: center;
-		width: 100vw;
+		width: 320px;
 		height: 234px;
 		background: #f8f8f8;
 		padding-left: 16px;
@@ -48,16 +47,15 @@ body {
 	}
 
 	.swiper {
-		width: 240px;
+		width: 480px;
 		height: 100px;
 		margin-top: 0px;
 		margin-left: 0px;
 	}
 
 	.swiper-wrapper {
-		width: auto;
+		width: 100vw;
 		height: 72px;
-		gap: 16px;
 	}
 
 	.cards-group {
@@ -230,7 +228,7 @@ body {
 		width: 204px;
 		height: 12px;
 		margin-top: 0px;
-		margin-left: 0px;
+		margin-left: 58px;
 		gap: 4px;
 	}
 }
@@ -476,6 +474,16 @@ body {
 		background: #f8f8f8;
 	}
 
+	.cards-line {
+		width: 100vw;
+		height: 1px;
+		opacity: 1;
+		border-radius: 1px;
+		border-top: 1px solid #d9fff5;
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+
 	.cards-list {
 		display: grid;
 		width: auto;
@@ -490,7 +498,7 @@ body {
 		width: auto;
 		height: 56px;
 		opacity: 1;
-		padding: 16px 32px;
+		padding-left: 32px;
 	}
 
 	.cards__text p {
@@ -712,7 +720,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 1121px) {
+@media screen and (min-width: 1120px) {
 	.swiper {
 		display: none;
 	}
@@ -722,11 +730,19 @@ body {
 	}
 
 	.cards {
-		display: flex;
-		justify-content: center;
+		display: grid;
 		width: 100vw;
-		height: 100vh;
+		height: 462px;
+	}
 
+	.cards-line {
+		width: 1120px;
+		height: 1px;
+		opacity: 1;
+		border-radius: 1px;
+		border-top: 1px solid #d9fff5;
+		margin-left: 0px;
+		margin-top: 0px;
 	}
 
 	.cards-list {

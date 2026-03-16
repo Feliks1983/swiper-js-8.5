@@ -13,8 +13,8 @@ readmore.addEventListener("click", function () {
 });
 
 const swiper = new Swiper(".swiper", {
-	slidesPerView: 1,
-	spaceBetween: 1,
+	slidesPerView: 2,
+	spaceBetween: 16,
 
 	pagination: {
 		el: ".swiper-pagina",
