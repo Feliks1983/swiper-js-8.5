@@ -2,12 +2,12 @@ body {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	font-family: "TT Lakes Compressed";
+	font-family: "TT Lakes Regular";
 }
 
 @font-face {
-	font-family: "TT Lakes Compressed";
-	src: url(font/TTLakesCompressed-Regular.ttf);
+	font-family: "TT Lakes Regular";
+	src: url(font/TTLakes-Regular.ttf);
 	font-weight: normal;
 }
 
@@ -18,7 +18,7 @@ body {
 
 	.cards {
 		display: flex;
-		width: 320px;
+		width: auto;
 		height: 234px;
 		background: #f8f8f8;
 		padding-left: 16px;
@@ -48,23 +48,17 @@ body {
 		color: #7e7e82;
 	}
 
-	.swiper {
-		width: 480px;
-		height: 100px;
-		margin-top: 0px;
-		margin-left: 0px;
-	}
-
 	.swiper-wrapper {
-		width: 100vw;
+		width: 240px;
 		height: 72px;
 	}
 
 	.cards-group {
-		display: none;
+		width: 480px;
+		height: auto;
 	}
 
-	.cards__a-fo {
+	.cards-item {
 		display: block;
 		width: 240px;
 		height: 72px;
@@ -121,17 +115,6 @@ body {
 		opacity: 1;
 		margin-left: 108px;
 		margin-top: 16px;
-	}
-
-	.cards__a-two {
-		display: block;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
 	}
 
 	.cards-viewsonic {
@@ -214,17 +197,6 @@ body {
 		margin-top: 16px;
 	}
 
-	.cards__a-free {
-		display: none;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
-	}
-
 	.swiper-pagina {
 		display: block;
 		width: 204px;
@@ -236,46 +208,37 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	.swiper {
+	.swiper-pagina {
 		display: none;
 	}
 
 	.cards {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		width: 100%;
-		height: 322px;
+		width: auto;
+		height: auto;
 		background: #f8f8f8;
-	}
-
-	.cards-line {
-		width: 768px;
-		height: 1px;
-		opacity: 1;
-		border-radius: 1px;
-		border-top: 1px solid #d9fff5;
-		margin-left: 0px;
-		margin-top: 0px;
 	}
 
 	.cards-list {
 		display: grid;
 		width: 768px;
-		height: 322px;
+		height: auto;
 		opacity: 1;
-		padding-left: 24px;
 		border-top: 1px solid #d9fff5;
 		background: #f8f8f8;
+		margin-bottom: 34px;
 	}
 
 	.cards__text {
 		display: block;
-		width: 768px;
+		width: auto;
 		height: 24px;
 		opacity: 1;
 		margin-left: 0px;
 		margin-top: 0px;
+		border-top: 1px solid #d9fff5;
 	}
 
 	.cards__text p {
@@ -290,31 +253,37 @@ body {
 		color: #7e7e82;
 	}
 
-	.cards-none__block {
-		display: block;
-	}
-
-	.cards-group {
+	.swiper-wrapper {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		width: auto;
 		height: auto;
-		margin-left: 0px;
-		margin-top: 24px;
 		background: #f8f8f8;
 		column-gap: 32px;
 		row-gap: 16px;
 	}
 
-	.cards__a-fo {
+	.cards-group {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		width: 480px;
+		height: auto;
+		margin-top: 24px;
+	}
+
+	.cards-item {
 		display: block;
-		width: 224px;
+		width: 240px;
 		height: 72px;
 		opacity: 1;
 		border-radius: 6px;
 		border-width: 1px;
 		border: 1px solid #eaeaea;
 		background: #ffffff;
+	}
+
+	.cards-item:nth-child(n + 7) {
+		display: none;
 	}
 
 	.cards-lenovo {
@@ -365,17 +334,6 @@ body {
 		margin-top: 16px;
 	}
 
-	.cards__a-two {
-		display: none;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
-	}
-
 	.cards-bosh {
 		width: 128px;
 		height: 28.6px;
@@ -424,10 +382,6 @@ body {
 		margin-top: 16px;
 	}
 
-	.cards__a-free {
-		display: none;
-	}
-
 	.readmore-remove {
 		display: block;
 		background: #f8f8f8;
@@ -446,15 +400,12 @@ body {
 		width: 24px;
 		height: 24px;
 		opacity: 1;
-		margin-top: 0px;
-		margin-left: 0px;
 	}
+	
 	.readmore__text {
 		width: 101px;
 		height: 24px;
 		opacity: 1;
-		margin-top: 0px;
-		margin-left: 0px;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 24px;
@@ -464,22 +415,19 @@ body {
 }
 
 @media screen and (min-width: 1120px) {
-	.swiper {
+
+	.swiper-pagina {
 		display: none;
 	}
-
-	.card-none__block {
-		display: block;
-	}
-
 	.cards {
-		display: grid;
-		width: 100vw;
-		height: 462px;
+		display: flex;
+		align-items: center;
+		width: auto;
+		height: auto;
 	}
 
 	.cards-line {
-		width: 1120px;
+		width: 100vw;
 		height: 1px;
 		opacity: 1;
 		border-radius: 1px;
@@ -489,8 +437,7 @@ body {
 	}
 
 	.cards-list {
-		display: grid;
-		width: 100vw;
+		width: 1120px;
 		height: auto;
 		opacity: 1;
 		border-top: 1px solid #d9fff5;
@@ -500,9 +447,9 @@ body {
 	.cards__text {
 		display: block;
 		width: auto;
-		height: 56px;
+		height: auto;
 		opacity: 1;
-		padding: 16px 32px;
+		margin-right: auto;
 	}
 
 	.cards__text p {
@@ -515,24 +462,17 @@ body {
 		text-transform: uppercase;
 		background: #f8f8f8;
 		color: #7e7e82;
+		margin-left: 32px;
 	}
 
 	.cards-group {
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		grid-template-rows: auto auto auto auto;
-		width: auto;
-		height: 298px;
-		background: #f8f8f8;
-		padding-left: 32px;
-		padding-top: 24px;
-		padding-right: 33px;
-		column-gap: 32px;
-		row-gap: 16px;
+		width: 480px;
+		height: auto;
+		margin-left: 32px;
 	}
 
-	.cards__a-fo {
-		display: block;
+	.cards-item {
+		display: flex;
 		width: 240px;
 		height: 72px;
 		opacity: 1;
@@ -540,6 +480,10 @@ body {
 		border-width: 1px;
 		border: 1px solid #eaeaea;
 		background: #ffffff;
+	}
+
+	.cards-item:nth-child(n + 7) {
+		display: block;
 	}
 
 	.cards-lenovo {
@@ -588,17 +532,6 @@ body {
 		opacity: 1;
 		margin-left: 124px;
 		margin-top: 16px;
-	}
-
-	.cards__a-two {
-		display: block;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
 	}
 
 	.cards-viewsonic {
@@ -681,24 +614,12 @@ body {
 		margin-top: 16px;
 	}
 
-	.cards__a-free {
-		display: block;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
-	}
-
 	.readmore {
 		display: flex;
 		width: 100vw;
-		height: 24px;
+		height: auto;
 		opacity: 1;
-		padding-top: 0px;
-		padding-left: 32px;
+		margin-left: 32px;
 		background: #f8f8f8;
 	}
 
@@ -709,7 +630,7 @@ body {
 	}
 
 	.readmore__text {
-		width: 100vw;
+		width: 133px;
 		height: 24px;
 		opacity: 1;
 		font-weight: 500;
