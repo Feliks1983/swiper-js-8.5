@@ -28,11 +28,13 @@ body {
 
 	.cards__text {
 		display: block;
-		width: 320px;
-		height: 80px;
+		width: 100vw;
+		height: auto;
 		opacity: 1;
 		margin-left: 0px;
 		margin-top: 0px;
+		border-top: 1px solid #d9fff5;
+		background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 	}
 
 	.cards__text p {
@@ -226,19 +228,19 @@ body {
 		width: 768px;
 		height: auto;
 		opacity: 1;
-		border-top: 1px solid #d9fff5;
 		background: #f8f8f8;
 		margin-bottom: 34px;
 	}
 
 	.cards__text {
 		display: block;
-		width: auto;
-		height: 24px;
+		width: 100vw;
+		height: auto;
 		opacity: 1;
 		margin-left: 0px;
 		margin-top: 0px;
 		border-top: 1px solid #d9fff5;
+		background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 	}
 
 	.cards__text p {
@@ -401,7 +403,7 @@ body {
 		height: 24px;
 		opacity: 1;
 	}
-	
+
 	.readmore__text {
 		width: 101px;
 		height: 24px;
@@ -415,7 +417,6 @@ body {
 }
 
 @media screen and (min-width: 1120px) {
-
 	.swiper-pagina {
 		display: none;
 	}
@@ -426,30 +427,21 @@ body {
 		height: auto;
 	}
 
-	.cards-line {
-		width: 100vw;
-		height: 1px;
-		opacity: 1;
-		border-radius: 1px;
-		border-top: 1px solid #d9fff5;
-		margin-left: 0px;
-		margin-top: 0px;
-	}
-
 	.cards-list {
 		width: 1120px;
 		height: auto;
 		opacity: 1;
-		border-top: 1px solid #d9fff5;
 		background: #f8f8f8;
 	}
 
 	.cards__text {
 		display: block;
-		width: auto;
+		width: 100vw;
 		height: auto;
 		opacity: 1;
 		margin-right: auto;
+		border-top: 1px solid #d9fff5;
+		background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
 	}
 
 	.cards__text p {
