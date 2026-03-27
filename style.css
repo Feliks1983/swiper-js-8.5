@@ -11,202 +11,193 @@ body {
 	font-weight: normal;
 }
 
-@media screen and (min-width: 320px) {
-	.readmore {
-		display: none;
-	}
+.readmore {
+	display: none;
+}
 
-	.cards {
-		display: flex;
-		width: auto;
-		height: 234px;
-		background: #f8f8f8;
-		padding-left: 16px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+.cards {
+	width: 320px;
+	height: 234px;
+	background: #f8f8f8;
+	padding-left: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	.cards__text {
-		display: block;
-		width: 100vw;
-		height: auto;
-		opacity: 1;
-		margin-left: 0px;
-		margin-top: 0px;
-		border-top: 1px solid #d9fff5;
-		background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
-	}
+.cards__text {
+	display: block;
+	width: 100vw;
+	height: auto;
+	opacity: 1;
+	margin-left: 0px;
+	margin-top: 0px;
+	border-top: 1px solid #d9fff5;
+	background: linear-gradient(to right, #f8f8f8 20%, #ffffff 80%);
+}
 
-	.cards__text p {
-		display: flex;
-		align-items: center;
-		width: 288px;
-		height: 48px;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.2px;
-		text-transform: uppercase;
-		color: #7e7e82;
-	}
+.cards__text p {
+	display: flex;
+	align-items: center;
+	width: 288px;
+	height: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #7e7e82;
+}
 
-	.swiper-wrapper {
-		width: 240px;
-		height: 72px;
-	}
+.cards-group {
+	width: 480px;
+	height: auto;
+}
 
-	.cards-group {
-		width: 480px;
-		height: auto;
-	}
+.cards-item {
+	display: block;
+	width: 240px;
+	height: 72px;
+	opacity: 1;
+	border-radius: 6px;
+	border-width: 1px;
+	border: 1px solid #eaeaea;
+	background: #ffffff;
+}
 
-	.cards-item {
-		display: block;
-		width: 240px;
-		height: 72px;
-		opacity: 1;
-		border-radius: 6px;
-		border-width: 1px;
-		border: 1px solid #eaeaea;
-		background: #ffffff;
-	}
+.cards-lenovo {
+	width: 108px;
+	height: 32px;
+	opacity: 1;
+	margin-left: 16px;
+	margin-top: 20px;
+}
 
-	.cards-lenovo {
-		width: 108px;
-		height: 32px;
-		opacity: 1;
-		margin-left: 16px;
-		margin-top: 20px;
-	}
+.cards-lenovo__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 60px;
+	margin-top: 16px;
+}
 
-	.cards-lenovo__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 60px;
-		margin-top: 16px;
-	}
+.cards-samsung {
+	width: 116px;
+	height: 38.52px;
+	opacity: 1;
+	margin-left: 16px;
+	margin-top: 17px;
+}
 
-	.cards-samsung {
-		width: 116px;
-		height: 38.52px;
-		opacity: 1;
-		margin-left: 16px;
-		margin-top: 17px;
-	}
+.cards-samsung__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 36px;
+	margin-top: 16px;
+}
 
-	.cards-samsung__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 36px;
-		margin-top: 16px;
-	}
+.cards-aple {
+	width: 44px;
+	height: 44px;
+	opacity: 1;
+	margin-left: 16px;
+	margin-top: 12px;
+}
 
-	.cards-aple {
-		width: 44px;
-		height: 44px;
-		opacity: 1;
-		margin-left: 16px;
-		margin-top: 12px;
-	}
+.cards-aple__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 108px;
+	margin-top: 16px;
+}
 
-	.cards-aple__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 108px;
-		margin-top: 16px;
-	}
+.cards-viewsonic {
+	width: 128px;
+	height: 21px;
+	opacity: 1;
+	margin-left: 14px;
+	margin-top: 26px;
+}
 
-	.cards-viewsonic {
-		width: 128px;
-		height: 21px;
-		opacity: 1;
-		margin-left: 14px;
-		margin-top: 26px;
-	}
+.cards-viewsonic__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 42px;
+	margin-top: 16px;
+}
 
-	.cards-viewsonic__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 42px;
-		margin-top: 16px;
-	}
+.cards-bosh {
+	width: 128px;
+	height: 28.6px;
+	opacity: 1;
+	margin-left: 16px;
+	margin-top: 21.7px;
+}
 
-	.cards-bosh {
-		width: 128px;
-		height: 28.6px;
-		opacity: 1;
-		margin-left: 16px;
-		margin-top: 21.7px;
-	}
+.cards-bosh__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 40px;
+	margin-top: 16px;
+}
 
-	.cards-bosh__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 40px;
-		margin-top: 16px;
-	}
+.cards-hp {
+	width: 52px;
+	height: 52px;
+	opacity: 1;
+	margin-left: 10px;
+	margin-top: 10px;
+}
 
-	.cards-hp {
-		width: 52px;
-		height: 52px;
-		opacity: 1;
-		margin-left: 10px;
-		margin-top: 10px;
-	}
+.cards-hp__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 122px;
+	margin-top: 16px;
+}
 
-	.cards-hp__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 122px;
-		margin-top: 16px;
-	}
+.cards-acer {
+	width: 94px;
+	height: 24px;
+	opacity: 1;
+	margin-left: 16px;
+	margin-top: 24px;
+}
 
-	.cards-acer {
-		width: 94px;
-		height: 24px;
-		opacity: 1;
-		margin-left: 16px;
-		margin-top: 24px;
-	}
+.cards-acer__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 74px;
+	margin-top: 16px;
+}
 
-	.cards-acer__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 74px;
-		margin-top: 16px;
-	}
+.cards-sony {
+	width: 128px;
+	height: 25.6px;
+	opacity: 1;
+	margin-left: 14px;
+	margin-top: 23px;
+}
 
-	.cards-sony {
-		width: 128px;
-		height: 25.6px;
-		opacity: 1;
-		margin-left: 14px;
-		margin-top: 23px;
-	}
+.cards-sony__go {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	margin-left: 42px;
+	margin-top: 16px;
+}
 
-	.cards-sony__go {
-		width: 40px;
-		height: 40px;
-		opacity: 1;
-		margin-left: 42px;
-		margin-top: 16px;
-	}
-
-	.swiper-pagina {
-		display: block;
-		width: 204px;
-		height: 12px;
-		margin-top: 0px;
-		margin-left: 58px;
-		gap: 4px;
-	}
+.swiper-pagina {
+	display: block;
+	width: 204px;
+	height: 12px;
+	margin-top: 16px;
+	margin-left: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -218,7 +209,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: auto;
+		width: 100vw;
 		height: auto;
 		background: #f8f8f8;
 	}
@@ -423,11 +414,13 @@ body {
 	.cards {
 		display: flex;
 		align-items: center;
-		width: auto;
+		justify-content: center;
+		width: 100vw;
 		height: auto;
 	}
 
 	.cards-list {
+		display: block;
 		width: 1120px;
 		height: auto;
 		opacity: 1;
@@ -457,14 +450,22 @@ body {
 		margin-left: 32px;
 	}
 
+	.swiper-wrapper {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		width: 480px;
+		height: auto;
+	}
+
 	.cards-group {
 		width: 480px;
 		height: auto;
 		margin-left: 32px;
+		column-gap: 32px;
+		row-gap: 16px;
 	}
 
 	.cards-item {
-		display: flex;
 		width: 240px;
 		height: 72px;
 		opacity: 1;
