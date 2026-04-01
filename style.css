@@ -217,14 +217,14 @@ body {
 	.cards {
 		display: flex;
 		align-items: center;
-		width: 100vw;
+		width: auto;
 		height: auto;
 		background: #f8f8f8;
 	}
 
 	.cards-list {
 		display: grid;
-		width: 768px;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		background: #f8f8f8;
@@ -233,7 +233,7 @@ body {
 
 	.cards__text {
 		display: block;
-		width: 100vw;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		margin-left: 0px;
@@ -385,7 +385,7 @@ body {
 
 	.readmore {
 		display: flex;
-		width: 134px;
+		width: auto;
 		height: 24px;
 		opacity: 1;
 		margin-top: 24px;
@@ -419,13 +419,13 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100vw;
+		width: auto;
 		height: auto;
 	}
 
 	.cards-list {
 		display: block;
-		width: 1120px;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		background: #f8f8f8;
@@ -433,7 +433,7 @@ body {
 
 	.cards__text {
 		display: block;
-		width: 100vw;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		margin-right: auto;
@@ -611,7 +611,7 @@ body {
 
 	.readmore {
 		display: flex;
-		width: 100vw;
+		width: auto;
 		height: auto;
 		opacity: 1;
 		margin-left: 32px;
