@@ -15,8 +15,12 @@ body {
 	display: none;
 }
 
+.cards-group {
+	display: none;
+}
+
 .cards {
-	width: 320px;
+	width: auto;
 	height: 234px;
 	background: #f8f8f8;
 	padding-left: 16px;
@@ -26,7 +30,7 @@ body {
 
 .cards__text {
 	display: block;
-	width: 100vw;
+	width: auto;
 	height: auto;
 	opacity: 1;
 	margin-left: 0px;
@@ -48,9 +52,15 @@ body {
 	color: #7e7e82;
 }
 
-.cards-group {
-	width: 480px;
-	height: auto;
+.swiper.cards-swiper {
+	display: block;
+	width: auto;
+	height: 100px;
+}
+
+.swiper-wrapper.cards-wrapper {
+	width: auto;
+	height: 72px;
 }
 
 .cards-item {
@@ -192,22 +202,20 @@ body {
 	margin-top: 16px;
 }
 
-.swiper-pagina {
-	display: block;
+.cards-paginat {
 	width: 204px;
-	height: 12px;
-	margin-top: 16px;
-	margin-left: 100px;
+  height: 12px;
+	margin-left: 190px;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
-	.swiper-pagina {
+	.swiper.cards-swiper {
 		display: none;
 	}
 
 	.cards {
 		display: flex;
-		justify-content: center;
 		align-items: center;
 		width: 100vw;
 		height: auto;
@@ -246,22 +254,19 @@ body {
 		color: #7e7e82;
 	}
 
-	.swiper-wrapper {
+	.cards-group {
+		display: block;
+		margin-top: 24px;
+	}
+
+	.cards-list__item {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		width: auto;
 		height: auto;
-		background: #f8f8f8;
+		margin-left: 32px;
 		column-gap: 32px;
 		row-gap: 16px;
-	}
-
-	.cards-group {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		width: 480px;
-		height: auto;
-		margin-top: 24px;
 	}
 
 	.cards-item {
@@ -275,9 +280,7 @@ body {
 		background: #ffffff;
 	}
 
-	.cards-item:nth-child(n + 7) {
-		display: none;
-	}
+
 
 	.cards-lenovo {
 		width: 108px;
@@ -408,9 +411,10 @@ body {
 }
 
 @media screen and (min-width: 1120px) {
-	.swiper-pagina {
+	.swiper.cards-swiper {
 		display: none;
 	}
+
 	.cards {
 		display: flex;
 		align-items: center;
@@ -450,15 +454,15 @@ body {
 		margin-left: 32px;
 	}
 
-	.swiper-wrapper {
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		width: 480px;
-		height: auto;
+	.cards-group {
+		display: block;
+		margin-top: 24px;
 	}
 
-	.cards-group {
-		width: 480px;
+	.cards-list__item {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		width: auto;
 		height: auto;
 		margin-left: 32px;
 		column-gap: 32px;
@@ -475,9 +479,7 @@ body {
 		background: #ffffff;
 	}
 
-	.cards-item:nth-child(n + 7) {
-		display: block;
-	}
+
 
 	.cards-lenovo {
 		width: 108px;

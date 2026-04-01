@@ -2,55 +2,67 @@ const readmore = document.querySelector(".readmore-remove");
 const cardsGroup = document.querySelector(".cards-group");
 const cardItems = document.querySelectorAll(".cards-item");
 const readmoreText = document.querySelector(".readmore__text");
+const cardItems9 = document.querySelectorAll(".cards-item:nth-child(n + 9)");
+const cardItems7 = document.querySelectorAll(".cards-item:nth-child(n + 7)");
 
-readmore.addEventListener("click", function () {
-	toggleLastThree();
-});
+// Функция для переключения видимости элементов
+function toggleCards(items, show) {
+	items.forEach((item) => {
+		item.style.display = show ? "block" : "none";
+	});
+}
 
-function toggleLastThree() {
-	for (let i = 8; i < cardItems.length; i++) {
-		const item = cardItems[i];
-		console.log(item);
-		if (item.style.display === "block") {
-			item.style.display = "none";
-			console.log(item);
-			readmoreText.innerHTML = "Показать все";
-		} else {
-			item.style.display = "block";
-			console.log(item);
-			readmoreText.innerHTML = "Скрыть";
-		}
+function handleReadMore() {
+	// Определяем, какие именно карточки мы сейчас контролируем в зависимости от ширины
+	const isMobile = window.innerWidth < 1120;
+	const targetItems = document.querySelectorAll(
+		isMobile ? ".cards-item:nth-child(n + 7)" : ".cards-item:nth-child(n + 9)",
+	);
+
+	// Проверяем текущее состояние по первому элементу в списке
+	const isHidden = targetItems[0].style.display === "none";
+
+	if (isHidden) {
+		toggleCards(targetItems, true);
+		readmoreText.innerHTML = "Скрыть";
+	} else {
+		toggleCards(targetItems, false);
+		readmoreText.innerHTML = "Показать все";
 	}
 }
 
-function checkWidthOnLoad() {
-	if (window.innerWidth < 1120) {
-		for (let i = 8; i < cardItems.length; i++) {
-			cardItems[i].style.display = "none";
-		}
-		readmoreText.textContent = "Показать все";
+function setupView() {
+	const isMobile = window.innerWidth < 1120;
+	const items7 = document.querySelectorAll(".cards-item:nth-child(n + 7)");
+	const items9 = document.querySelectorAll(".cards-item:nth-child(n + 9)");
+
+	// Сбрасываем всё в исходное состояние (показываем все)
+	document
+		.querySelectorAll(".cards-item")
+		.forEach((el) => (el.style.display = "block"));
+
+	// Скрываем нужные в зависимости от экрана
+	if (isMobile) {
+		toggleCards(items7, false);
 	} else {
-		readmore.style.display = "block"; 
-}
-	if (window.innerWidth > 1120) {
-		for (let i = 8; i < cardItems.length; i++) {
-			cardItems[i].style.display = "block";
-		}
-		readmoreText.textContent = "Скрыть";
-	} else {
-		readmore.style.display = "block";
+		toggleCards(items9, false);
 	}
+	readmoreText.innerHTML = "Показать все";
 }
 
-checkWidthOnLoad();
-window.addEventListener("resize", checkWidthOnLoad);
+// Слушатели событий
+readmore.addEventListener("click", handleReadMore);
+window.addEventListener("resize", setupView);
 
-const swiper = new Swiper(".cards-group", {
-	slidesPerView: 2,
+// Инициализация при загрузке
+setupView();
+
+const swiper = new Swiper(".cards-swiper", {
+	slidesPerView: 'auto',
 	spaceBetween: 16,
 
 	pagination: {
-		el: ".swiper-pagina",
+		el: ".cards-paginat",
 		clickable: true,
 		type: "bullets",
 	},
