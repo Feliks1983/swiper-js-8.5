@@ -2,12 +2,12 @@ body {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	font-family: "TT Lakes Regular";
+	font-family: "TT Lakes";
 }
 
 @font-face {
-	font-family: "TT Lakes Regular";
-	src: url(font/TTLakes-Regular.ttf);
+	font-family: "TT Lakes";
+	src: url(./font/TTLakes-Regular.ttf);
 	font-weight: normal;
 }
 
@@ -64,7 +64,6 @@ body {
 }
 
 .cards-item {
-	display: block;
 	width: 240px;
 	height: 72px;
 	opacity: 1;
@@ -202,13 +201,6 @@ body {
 	margin-top: 16px;
 }
 
-.cards-paginat {
-	width: 204px;
-  height: 12px;
-	margin-left: 190px;
-  opacity: 1;
-}
-
 @media screen and (min-width: 768px) {
 	.swiper.cards-swiper {
 		display: none;
@@ -217,6 +209,7 @@ body {
 	.cards {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		width: auto;
 		height: auto;
 		background: #f8f8f8;
@@ -264,7 +257,7 @@ body {
 		grid-template-columns: auto auto auto;
 		width: auto;
 		height: auto;
-		margin-left: 32px;
+		margin-left: 0px;
 		column-gap: 32px;
 		row-gap: 16px;
 	}
@@ -279,8 +272,6 @@ body {
 		border: 1px solid #eaeaea;
 		background: #ffffff;
 	}
-
-
 
 	.cards-lenovo {
 		width: 108px;
@@ -478,8 +469,6 @@ body {
 		border: 1px solid #eaeaea;
 		background: #ffffff;
 	}
-
-
 
 	.cards-lenovo {
 		width: 108px;

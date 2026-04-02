@@ -4,6 +4,7 @@ const cardItems = document.querySelectorAll(".cards-item");
 const readmoreText = document.querySelector(".readmore__text");
 const cardItems9 = document.querySelectorAll(".cards-item:nth-child(n + 9)");
 const cardItems7 = document.querySelectorAll(".cards-item:nth-child(n + 7)");
+const readmoreImg = document.querySelector(".readmore__img");
 
 function toggleCards(items, show) {
 	items.forEach((item) => {
@@ -22,9 +23,11 @@ function handleReadMore() {
 	if (isHidden) {
 		toggleCards(targetItems, true);
 		readmoreText.innerHTML = "Скрыть";
+		readmoreImg.style.transform = 'rotate(0deg)';
 	} else {
 		toggleCards(targetItems, false);
 		readmoreText.innerHTML = "Показать все";
+		readmoreImg.style.transform = "rotate(180deg)";
 	}
 }
 
@@ -51,24 +54,12 @@ window.addEventListener("resize", setupView);
 setupView();
 
 const swiper = new Swiper(".cards-swiper", {
-	slidesPerView: 'auto',
+	slidesPerView: "auto",
 	spaceBetween: 16,
 
 	pagination: {
 		el: ".cards-paginat",
 		clickable: true,
 		type: "bullets",
-	},
-
-	breakpoints: {
-		320: {
-			enabled: true,
-		},
-		768: {
-			enabled: false,
-		},
-		1120: {
-			enabled: false,
-		},
 	},
 });
